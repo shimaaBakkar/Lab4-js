@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+</head>
+
+<body>
+  <div class="form">
+    <form action="#">
+      <input id="fullName" type="text" name="firstName" placeholder="Enter your name" onfocus="myFunction()"
+        onblur="vliadtion()">
+      <small id="err" style="color: red; display: none;">error</small>
+      <br>
+
+      <label for="city">Choose your city:</label>
+      <br>
+      <select name="city" id="city">
+        <option value="Aswan">Aswan</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Alex">Alex</option>
+      </select>
+      <br>
+
+      <input id="myEmail" type="text" name="email" placeholder="Enter your email">
+      <br>
+
+      <input id="myPassword" type="password" name="password" placeholder="Enter your password" onblur="passVaidator()">
+      <small id="passerr" style="color: red; display: none;">Enter stronge password</small>
+      <br>
+
+
+      <input id="confirmPassword" type="password" name="password" placeholder="confirm your password"
+        onblur="passVaidator()">
+      <small id="repasserr" style="color: red; display: none;">not the same</small>
+
+      <br>
+
+
+      <input type="checkbox" id="accept" value="accept">
+      <label for="accept">I accept the terms and conditions</label>
+      <br>
+
+      <input onclick="submit()" type="submit" value="submit">
+    </form>
+    <!-- <hr> -->
+
+    <div id="info">
+      <div id="name"></div>
+      <div id="gender"></div>
+      <div id="edu"></div>
+    </div>
+
+  </div>
+
+
+  <!-- 
+    <input type="text" placeholder="enter name" id="name" onblur="vliadtion()">
+    <small id="err" style="color: red; display: none;">error</small>
+    <br>
+    <input type="radio" name="gender" value="male"> Male
+    <br>
+    <input type="radio" name="gender" value="female">Female
+    <br>
+    <select id="myselect">
+        <option value="cs">CS</option>
+        <option value="eng">Eng</option>
+        <option value="low">Low</option>
+        <option value="arts">Arts</option>
+    </select>
+    <br>
+    <input type="button" onclick="save()" value="save">
+    <hr>
+    <div id="info">
+        <div id="name"></div>
+        <div id="gender"></div>
+        <div id="edu"></div>
+    </div> -->
+
+
+</body>
+
+<script src="./form.js"></script>
+
+</html>
